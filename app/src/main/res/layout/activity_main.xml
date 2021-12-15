@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.generateur_mot_de_passe.activity.MainActivity" >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingTop="18dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="18dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCharacters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBoxLowerCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/main_activity_chechbox_lower_case" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxUpperCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/main_activity_chechbox_upper_case" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxNumbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/main_activity_chechbox_numbers" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSymbols"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutCharacters"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxCustomSymbols"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:checked="true"
+                    android:text="@string/main_activity_chechbox_custom_symbols" />
+
+                <EditText
+                    android:id="@+id/editTextSymbols"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="0dp"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword|text"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:importantForAutofill="no"
+                    tools:ignore="LabelFor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutUniqueChars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutSymbols"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxUniqueChars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:checked="true"
+                    android:text="@string/main_activity_chechbox_unique_chars" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSimilarChars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutSymbols"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxSimilarChars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:checked="true"
+                    android:text="@string/main_activity_chechbox_similar_chars" />
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutPasswordsNumber"
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/linearLayoutSymbols"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPasswordsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/checkBoxUniqueChars"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/checkBoxUniqueChars"
+                    android:text="@string/main_activity_textview_passwords_count"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:textSize="14sp"
+                    tools:ignore="NotSibling" />
+
+                <EditText
+                    android:id="@+id/editTextPasswordsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/textViewPasswordsCount"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="85dp"
+                    android:layout_toEndOf="@id/textViewPasswordsCount"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <Button
+                    android:id="@+id/buttonPasswordsCountMinus"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBaseline="@id/textViewPasswordsCount"
+                    android:layout_toStartOf="@+id/buttonPasswordsCountPlus"
+                    android:text="@string/main_activity_button_minus"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonPasswordsCountPlus"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_alignBaseline="@id/textViewPasswordsCount"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/main_activity_button_plus"
+                    android:textSize="20sp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutPasswordsLength"
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/linearLayoutSymbols"
+                android:layout_marginTop="200dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPasswordLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/checkBoxSimilarChars"
+                    android:layout_alignStart="@id/textViewPasswordsCount"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/checkBoxSimilarChars"
+                    android:layout_toRightOf="@id/checkBoxSimilarChars"
+                    android:text="@string/main_activity_textview_length"
+                    android:textColor="@color/secondary_text_darktheme"
+                    tools:ignore="NotSibling,RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/editTextPasswordLength"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewPasswordLength"
+                android:layout_toEndOf="@id/textViewPasswordLength"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="65dp"
+                android:textSize="14sp"
+                android:maxLength="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/buttonPasswordLengthMinus"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignBaseline="@id/textViewPasswordLength"
+                android:layout_toStartOf="@+id/buttonPasswordLengthPlus"
+                android:textSize="20sp"
+                android:text="@string/main_activity_button_minus" />
+
+            <Button
+                android:id="@+id/buttonPasswordLengthPlus"
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@id/textViewPasswordLength"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:text="@string/main_activity_button_plus" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonGenerate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="500dp"
+                android:text="@string/main_activity_button_generate" />
+
+            <Button
+                android:id="@+id/buttonCopy"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/buttonGenerate"
+                android:text="@string/main_activity_button_copy" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPasswords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonCopy"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:descendantFocusability="beforeDescendants" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutTop"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/about_image_label_background"
+                    android:padding="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:textSize="16sp"
+                    android:textColor="?attr/about_image_label_text"
+                    android:text="@string/app_name" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutTop"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/textViewAuthorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:textAllCaps="true"
+                    android:text="@string/about_author_title" />
+
+                <TextView
+                    android:id="@+id/textViewAuthorValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewAuthorTitle"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/other_author"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/textViewWebsiteTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewAuthorValue"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="?attr/secondary_text"
+                    android:textAllCaps="true"
+                    android:text="@string/about_website_title" />
+
+                <TextView
+                    android:id="@+id/textViewWebsiteValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewWebsiteTitle"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:text="@string/other_website" />
+
+
+                <TextView
+                    android:id="@+id/textViewPrivacyPolicyTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewWebsiteValue"
+                    android:textSize="14sp"
+                    android:textColor="?attr/secondary_text"
+                    android:textAllCaps="true"
+                    android:text="@string/about_about_privacy_policy_title" />
+
+                <TextView
+                    android:id="@+id/textViewPrivacyPolicyValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrivacyPolicyTitle"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:text="@string/other_privacy_policy_website" />
+
+
+                <TextView
+                    android:id="@+id/textViewEmailTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewPrivacyPolicyValue"
+                    android:textSize="14sp"
+                    android:textColor="?attr/secondary_text"
+                    android:textAllCaps="true"
+                    android:text="@string/about_contact_email_title" />
+
+                <TextView
+                    android:id="@+id/textViewEmailValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewEmailTitle"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:text="@string/other_contact_email" />
+
+
+                <TextView
+                    android:id="@+id/textViewSourceCodeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewEmailValue"
+                    android:textSize="14sp"
+                    android:textColor="?attr/secondary_text"
+                    android:textAllCaps="true"
+                    android:text="@string/about_source_code_title" />
+
+                <TextView
+                    android:id="@+id/textViewSourceCodeValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewSourceCodeTitle"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:text="@string/other_source_code_repository" />
+
+
+                <TextView
+                    android:id="@+id/textViewVersionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewSourceCodeValue"
+                    android:textSize="14sp"
+                    android:textColor="?attr/secondary_text"
+                    android:textAllCaps="true"
+                    android:text="@string/about_version_title" />
+
+                <TextView
+                    android:id="@+id/textViewVersionValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewVersionTitle"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:text="" />
+
+
+                <TextView
+                    android:id="@+id/textViewBuildNumberTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewVersionValue"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textColor="?attr/secondary_text"
+                    android:textAllCaps="true"
+                    android:text="@string/about_build_number_title" />
+
+                <TextView
+                    android:id="@+id/textViewBuildNumberValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewBuildNumberTitle"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text_darktheme"
+                    android:text="" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

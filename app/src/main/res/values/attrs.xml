@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Themes -->
+    <attr name="ToolbarPopupTheme" format="reference" />
+    <!-- Material colors -->
+    <attr name="primary" format="reference" />
+    <attr name="primary_dark" format="reference" />
+    <attr name="primary_light" format="reference" />
+    <attr name="accent" format="reference" />
+    <attr name="primary_text" format="reference" />
+    <attr name="secondary_text" format="reference" />
+    <attr name="button_color" format="reference" />
+    <!-- Activity specific colors -->
+    <attr name="about_image_label_background" format="reference" />
+    <attr name="about_image_label_text" format="reference" />
+    <!-- Other colors -->
+    <attr name="password_strength_weak" format="reference" />
+    <attr name="password_strength_medium" format="reference" />
+    <attr name="password_strength_strong" format="reference" />
+    <attr name="password_strength_very_strong" format="reference" />
+    <attr name="password_strength_ultra_strong" format="reference" />
+    <attr name="ad_divider_color" format="reference" />
+
+
+</resources>

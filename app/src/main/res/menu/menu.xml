@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity" >
+
+    <item
+        android:id="@+id/auto_clipboard_clearing"
+        android:title="@string/main_activity_menu_auto_clipboard_clearing"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/menu_reset_symbols"
+        android:title="@string/main_activity_menu_reset_symbols" />
+
+    <item
+        android:id="@+id/menu_tips"
+        android:title="@string/main_activity_menu_tips" />
+
+    <item
+        android:id="@+id/menu_password_strength"
+        android:title="@string/main_activity_menu_password_strength" />
+
+    <item
+        android:id="@+id/menu_help"
+        android:title="@string/main_activity_menu_help" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/main_activity_menu_about" />
+
+</menu>

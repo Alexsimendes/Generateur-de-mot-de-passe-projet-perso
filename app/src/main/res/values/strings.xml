@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="main_activity_chechbox_custom_symbols">Symboles:</string>
+    <string name="main_activity_chechbox_lower_case">Majuscules</string>
+    <string name="main_activity_chechbox_upper_case">Miniscules</string>
+    <string name="main_activity_chechbox_numbers">Chiffres</string>
+    <string name="main_activity_textview_passwords_count">Quantité de mot de passe nécessaire</string>
+    <string name="main_activity_textview_length">Taille du mot de passe souhaitée</string>
+    <string name="main_activity_chechbox_unique_chars">Caractères uniques</string>
+    <string name="main_activity_chechbox_unique_characters">Unique characters</string>
+    <string name="main_activity_chechbox_similar_chars">Similar chars</string>
+    <string name="main_activity_chechbox_similar_characters">Evitez les caractères trop similaires</string>
+    <string name="main_activity_button_minus">-</string>
+    <string name="main_activity_button_plus">+</string>
+    <string name="main_activity_button_generate">Créer</string>
+    <string name="main_activity_button_copy">Copier dans le presse papier</string>
+    <string name="main_activity_textview_strength" formatted="false">%s (%d bits)</string>
+    <string name="main_activity_info_copied_to_clipboard_singular">Mot de passe copié.</string>
+    <string name="main_activity_info_copied_to_clipboard_plural">Mots de passe copiés.</string>
+    <string name="main_activity_info_clear_clipboard_timeout">Presse papier néttoyé dans 15 secondes.</string>
+    <string name="main_activity_menu_auto_clipboard_clearing">Nettoyage automatique</string>
+    <string name="main_activity_menu_reset_symbols">Remise à zéro des symboles</string>
+    <string name="main_activity_menu_app_theme">Thèmes</string>
+    <string name="main_activity_menu_tips">Astuces et conseils</string>
+    <string name="main_activity_menu_password_strength">Force du mot de passe</string>
+    <string name="main_activity_menu_help">Aide</string>
+    <string name="main_activity_menu_about">A propos</string>
+
+    <string name="about_title">A propos</string>
+    <string name="about_author_title">Auteur</string>
+    <string name="about_website_title">Site internet</string>
+    <string name="about_about_privacy_policy_title">Politique de confidentialité</string>
+    <string name="about_contact_email_title">Contact par e-mail</string>
+    <string name="about_source_code_title">Code source</string>
+    <string name="about_version_title">Version</string>
+    <string name="about_build_number_title">Build number</string>
+
+    <string name="dialog_quit_clipboard" formatted="false">Le presse papier n\'est pas vide. %s Nettoyage après fermeture de l\'application. Voulez-vous quitter %s?</string>
+    <string name="dialog_quit_rate" formatted="false">Vous aimez l\'application %s? Pensez à mettre une note!</string>
+    <string name="dialog_no_internet_browser">Impossible de se connecter à internet.</string>
+    <string name="dialog_no_email_application">Impossible d\'envoyer un mail.</string>
+    <string name="dialog_restart_theme_change" formatted="false"> Changement au redémarrage de l\application.</string>
+    <string name="dialog_button_yes">Oui</string>
+    <string name="dialog_button_no">Non</string>
+    <string name="dialog_button_ok">D\'accord</string>
+    <string name="dialog_button_cancel">Annuler</string>
+    <string name="dialog_button_no_thanks">Non merci</string>
+
+    <string name="dialog_button_rate_it">Voulez vous nous noter?</string>
+    <string name="tips_text">
+        Un mot de passe devrait être composé de:
+        \n
+        \n Minimum 10 caractères
+        \n Minimum 1 majuscule et 1 minuscule
+        \n Minimum 1 chiffre
+        \n Minimum 1 symbole
+        \n Evitez les vrais mots
+        \n
+        \n
+        \n Evitez de mettre un vrai mot en remplaçant les lettres par des chiffres
+        \n
+        \n Evitez d\'utilisez plus d\'une fois le même mot de passe
+        \n
+        \n Pensez à utilisez un gestionnaire de mot de passe
+        \n
+        \n Besoin de plus d\'information?
+        \n
+        \n Rendez vous sur https://www.privacyguides.org/software/passwords/ https://www.privacytools.io/#password
+        \n
+        \n En plus de votre gestionnaire de mot de passe, il est conseillé d\'activer la double authentification (2FA)
+        \n
+        \n Pour plus d\'informations, n\'hésitez pas à vous renseignez sur  https://www.privacyguides.org ou https://www.privacytools.io
+        \n
+    </string>
+
+    <string name="dialog_password_strength_text" formatted="false">
+        Plus vous choisissez un mot de passe long et varié, plus il sera difficile pour tout autre personne de pouvoir le trouver.
+    </string>
+
+    <string name="dialog_help_text">
+        Options de génération:
+        \n
+        \n• Caractères uniques : Permet de créer un mot de passe en évitant, quand cela est possible, la répétition de caractères. (Attention! Plus le mot de passe est long, moins cela est possible.)
+        \n
+        \n• Caractères similaires  : Permet d\'évitez les caractères se ressemblant un peu trop (ex: 0 et O ou 1,l et I)
+        \n
+    </string>
+
+    <string name="other_not_available">N/A</string>
+    <string-array name="app_theme">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="other_password_strength">
+        <item>Faible</item>
+        <item>Moyen</item>
+        <item>Fort</item>
+        <item>Très fort</item>
+        <item>Très très Fort</item>
+    </string-array>
+
+
+
+
+
+    <string name="app_name" translatable="false" tools:ignore="DuplicateDefinition">Générateur de Mot de passe</string>
+    <string name="other_author" translatable="false">MeleagantB</string>
+    <string name="other_website">https://github.com/MeleagantB</string>
+    <string name="other_privacy_policy_website" translatable="false">https://github.com/MeleagantB</string>
+    <string name="other_contact_email" translatable="false">https://github.com/MeleagantB</string>
+    <string name="other_source_code_repository" translatable="false">https://github.com/MeleagantB/Make-Passwords-Strong-Again</string>
+
+
+
+</resources>

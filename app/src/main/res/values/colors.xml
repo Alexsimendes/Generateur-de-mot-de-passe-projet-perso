@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Light Theme-->
+    <color name="primary_lighttheme">#32000000</color>
+    <color name="primary_dark_lighttheme">#48868686</color>
+    <color name="primary_light_lighttheme">#2a868686</color>
+    <color name="accent_lighttheme">#e53935</color>
+    <color name="primary_text_lighttheme">#1fa6a6a6</color>
+    <color name="secondary_text_lighttheme">#5a000000</color>
+    <color name="button_color_lighttheme">#CFD8DC</color>
+    <color name="about_image_label_background_lighttheme">#5a000000</color>
+    <color name="about_image_label_text_lighttheme">#33000000</color>
+    <!-- Dark Theme -->
+    <color name="primary_darktheme">#000000</color>
+    <color name="primary_dark_darktheme">#FF5252</color>
+    <color name="primary_light_darktheme">#1effffff</color>
+    <color name="accent_darktheme">#23454545</color>
+    <color name="primary_text_darktheme">#0F0F0F</color>
+    <color name="secondary_text_darktheme">#202020</color>
+    <color name="button_color_darktheme">#25FFFFFF</color>
+    <color name="about_image_label_background_darktheme">#88000000</color>
+    <color name="about_image_label_text_darktheme">#FFEEEEEE</color>
+
+    <!-- Other specific colors / Dark Theme -->
+    <color name="password_strength_weak_darktheme">#B71C1C</color>
+    <color name="password_strength_medium_darktheme">#F57F17</color>
+    <color name="password_strength_strong_darktheme">#D3D33C</color>
+    <color name="password_strength_very_strong_darktheme">#1B5E20</color>
+    <color name="password_strength_ultra_strong_darktheme">#12FF00</color>
+    <color name="ad_divider_color_darktheme">#FFFFFF</color>
+    <!-- Other specific colors / Light Theme -->
+    <color name="password_strength_weak_lighttheme">#FF0000</color>
+    <color name="password_strength_medium_lighttheme">#F57F17</color>
+    <color name="password_strength_strong_lighttheme">#D3D33C</color>
+    <color name="password_strength_very_strong_lighttheme">#1B5E20</color>
+    <color name="password_strength_ultra_strong_lighttheme">#12FF00</color>
+    <color name="ad_divider_color_lighttheme">#CCCCCC</color>
+</resources>

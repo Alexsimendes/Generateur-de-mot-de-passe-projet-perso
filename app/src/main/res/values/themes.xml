@@ -1,0 +1,41 @@
+<resources>
+
+    <!--Light Theme-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="ToolbarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="colorPrimary">@color/primary_lighttheme</item>
+        <item name="colorPrimaryDark">@color/primary_dark_lighttheme</item>
+        <item name="colorAccent">@color/accent_lighttheme</item>
+        <item name="colorButtonNormal">@color/button_color_lighttheme</item>
+
+        <!-- Material colors -->
+        <item name="primary">@color/primary_lighttheme</item>
+        <item name="primary_dark">@color/primary_dark_lighttheme</item>
+        <item name="primary_light">@color/primary_light_lighttheme</item>
+        <item name="accent">@color/accent_lighttheme</item>
+        <item name="primary_text">@color/primary_text_lighttheme</item>
+        <item name="secondary_text">@color/secondary_text_lighttheme</item>
+        <item name="button_color">@color/button_color_lighttheme</item>
+
+        <!-- Activity specific colors -->
+        <item name="about_image_label_background">@color/about_image_label_background_lighttheme</item>
+        <item name="about_image_label_text">@color/about_image_label_text_lighttheme</item>
+
+        <!-- Other colors -->
+        <item name="password_strength_weak">@color/password_strength_weak_lighttheme</item>
+        <item name="password_strength_medium">@color/password_strength_medium_lighttheme</item>
+        <item name="password_strength_strong">@color/password_strength_strong_lighttheme</item>
+        <item name="password_strength_very_strong">@color/password_strength_very_strong_lighttheme</item>
+        <item name="password_strength_ultra_strong">@color/password_strength_ultra_strong_lighttheme</item>
+        <item name="ad_divider_color">@color/ad_divider_color_lighttheme</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+
+</resources>
